@@ -1,0 +1,64 @@
+{
+	"Ternary Operator": {
+		"prefix": "ternary",
+		"body": [
+			"(${1:condition}) ? ${2:truthyResult} : ${3:falseyResult};"
+		],
+		"description": "Ternary operator with truthy and falsy results."
+	},
+	// React
+	"React Component Function": {
+		"prefix": "rc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"const ${1:Name} = () => {",
+			"    return (",
+			"        ${2:<div>$0</div>}",
+			"    );",
+			"}",
+			"",
+			"export default ${1:Name};"
+		],
+		"description": "React component function."
+	},
+	"React Component Function (State)": {
+		"prefix": "rcState",
+		"body": [
+			"import React, { useState } from 'react';",
+			"",
+			"const ${1:Name} = () => {",
+			"    const [${2:state}, ${3:setState}] = useState($4);",
+			"",
+			"    return (",
+			"        ${5:<div>$0</div>}",
+			"    );",
+			"}",
+			"",
+			"export default ${1:Name};"
+		],
+		"description": "React component function using state hook."
+	},
+	"React Component Function (Prototypes)": {
+		"prefix": "rcProto",
+		"body": [
+			"import React, { ${1:Prototypes} } from 'react';",
+			"",
+			"const ${2:Name} = () => {",
+			"    return (",
+			"        ${3:<div>$0</div>}",
+			"    );",
+			"}",
+			"",
+			"export default ${2:Name};"
+		],
+		"description": "React component function using prototypes."
+	},
+	"React Ternary Operator": {
+		"prefix": "rTernary",
+		"body": [
+			"{(${1:condition}) ? ${2:truthyResult} : ${3:falseyResult}}"
+		],
+		"description": "Ternary operator with truthy and falsey results, in React JSX."
+	}
+}
